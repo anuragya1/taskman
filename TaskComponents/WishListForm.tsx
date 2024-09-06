@@ -18,7 +18,7 @@ const WishlistForm = () => {
   const [showDatePicker, setShowDatePicker] = useState(false);
   const animation = useRef(new Animated.Value(0)).current;
 
-  // Add type annotations for the event and selectedDate
+
   const handleDateChange = (event: DateTimePickerEvent, selectedDate?: Date) => {
     const currentDate = selectedDate || wishlistItem.due_date;
     setShowDatePicker(Platform.OS === 'ios');
